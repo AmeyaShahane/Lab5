@@ -5,25 +5,25 @@
  * both classes, by fixing checkstyle errors, defining constructors, getters and setters, and
  * accessing private variables.
  *
- * @see <a href="https://cs125.cs.illinois.edu/lab/5/">Lab 5 Description</a>
- */
-public class Bank {
-
-    public String bankName;
-
-    public Bank() {
-        bankName = "Illini Bank";
-    }
-
-    /**
-     * Withdraw money from an account.
-     * <p>
      * Subtracts the amount of money from bank account's balance. Returns true if transaction is
      * successful, false otherwise.
      *
      * @param bankAccount to withdraw money from.
      * @param amount to withdraw (double)
      * @return boolean
+     * @see <a href="https://cs125.cs.illinois.edu/lab/5/">Lab 5 Description</a>
+     */
+    public class Bank {
+
+        public String bankName;
+
+        public Bank() {
+            bankName = "Illini Bank";
+        }
+
+        /**
+         * Withdraw money from an account.
+         * <p>
      */
     public boolean withdrawMoney(final BankAccount bankAccount, final double amount) {
         /*
